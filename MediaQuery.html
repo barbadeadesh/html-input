@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+    .box{
+        font-size: 20px;
+        background-color: red;
+        color: black;
+        text-align: center;
+        display: none;
+        
+        
+    }
+    
+    
+    @media (min-width:200px)and (max-width:290px){
+        #box-2{
+            display: block;
+            background-color: blue;
+            color: azure;
+        }
+    }
+    @media (min-width:300px)and (max-width:390px){
+        #box-3{
+            display: block;
+            background-color: black;
+            color: blue;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"> I have a phone</div>
+    <div class="box" id="box-2">I use nokia phone </div>
+    <div class="box" id="box-3"> I use a smartphone</div>
+    <div class="box" id="box-4"> The color of phone is black </div>
+</body>
+</html>
